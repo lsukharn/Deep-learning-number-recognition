@@ -5,9 +5,6 @@ MNIST is a large database of handwritten digits that is commonly used for traini
 
 See more here: https://en.wikipedia.org/wiki/MNIST_database
 
-
-Neon is the API used to train a fully connected neural network which goal is to recognize handwritten images.
-=======
 Neon is the API used to train a fully connected neural network(NN). 
 See here for details of installation and running Neon on Linux: http://neon.nervanasys.com/docs/0.9.0/installation.html
 
