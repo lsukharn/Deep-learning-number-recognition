@@ -25,7 +25,7 @@ init_norm = Gaussian(loc=0.0, scale=0.01)
 
 #Affine is a FC network with 100 hidden units
 from neon.layers import Affine
-#We will use ReLu for hidden units and SoftMax fro output units. Softmax is used to ensure that 
+#We will use ReLu for hidden units and SoftMax for output units. Softmax is used to ensure that 
 #all outputs sum up to 1 and are within the range of [0, 1]
 from neon.transforms import Rectlin, Softmax
 
@@ -39,7 +39,8 @@ from neon.models import Model
 
 mlp = Model(layers=layers)
 
-#The cost function is wrapped within a GeneralizedCost layer, which handles the comparison of the #outputs with the provided labels in the dataset.
+#The cost function is wrapped within a GeneralizedCost layer, which handles the comparison of the 
+#outputs with the provided labels in the dataset.
 #Get cost function, CrossEntropyMulti
 from neon.layers import GeneralizedCost
 from neon.transforms import CrossEntropyMulti
